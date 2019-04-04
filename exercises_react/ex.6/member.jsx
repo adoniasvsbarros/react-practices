@@ -1,4 +1,4 @@
-// Children components
+// passing properties from parent component to children
 
 import React from 'react'
 

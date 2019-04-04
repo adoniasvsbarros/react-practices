@@ -1,3 +1,5 @@
+// Children components
+
 import React from 'react'
 
 export default props => (

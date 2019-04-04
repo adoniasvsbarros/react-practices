@@ -1,4 +1,4 @@
-// First component in react
+// Using propertie from react component
 
 import React from 'react'
 

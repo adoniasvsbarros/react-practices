@@ -1,4 +1,4 @@
-// First component in react
+// Exporting more than one component
 
 import React from 'react'
 

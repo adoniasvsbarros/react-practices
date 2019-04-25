@@ -9,13 +9,15 @@ import ReactDOM from 'react-dom'
 //import ComponentWithFunction from './components/ComponentWithFunction'
 //import Father from './components/Father'
 //import ComponentWithClass from './components/ComponentWithClass'
-import Counter from './components/Counter'
+//import Counter from './components/Counter'
+import Hook from './components/Hook'
 
 const element = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <Counter initialNumber={10}/>
+        <Hook />
+        {/*<Counter initialNumber={10}/>*/}
         {/*<ComponentWithClass value="I'm a component with class!"/>*/}
         {/*<Father />*/}
         {/*<ComponentWithFunction />*/}

@@ -4,16 +4,24 @@ import ReactDOM from 'react-dom'
 //import {CompA, CompB as B} from './components/TwoComponents'
 //import MultiElements from './components/MultiElements'
 //import SilvaFamily from './components/SilvaFamily'
-import Family from './components/Family'
-import Member from './components/Member'
+//import Family from './components/Family'
+//import Member from './components/Member'
+//import ComponentWithFunction from './components/ComponentWithFunction'
+//import Father from './components/Father'
+//import ComponentWithClass from './components/ComponentWithClass'
+import Counter from './components/Counter'
 
 const element = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <Family surname="Touch">
+        <Counter initialNumber={10}/>
+        {/*<ComponentWithClass value="I'm a component with class!"/>*/}
+        {/*<Father />*/}
+        {/*<ComponentWithFunction />*/}
+        {/*<Family surname="Touch">
             <Member name="Caio"  />
-        </Family>
+        </Family>/*}
         {/*<SilvaFamily/>*/}
         {/*<MultiElements />*/}
         {/*<CompA value="Hi I'm A!"/>

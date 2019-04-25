@@ -2,7 +2,7 @@ import React from 'react'
 
 // solution 1 (maybe the most used)
 
-export default props =>
+export default () =>
     <div>
         <h1>First part</h1>
         <h2>Second part</h2>

@@ -40,7 +40,7 @@ class TodoForm extends React.Component{
                     <IconButton style='primary' icon='plus' 
                         onClick={() =>  add(description)}></IconButton>
                     <IconButton style='info' icon='search'
-                        onClick={() => search()}>
+                        onClick={search}>
                     </IconButton>
                     <IconButton style='default' icon='close'
                         onClick={this.props.clear}>

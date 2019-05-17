@@ -1,7 +1,10 @@
 const billingCycle = require ('./billingCycle')
+const errorHandler = require ('../common/errorHandler')
 
 billingCycle.methods(['get', 'post', 'put', 'delete']) // creating restful webservices
 billingCycle.updateOptions({new: true, runValidators: true}) // guarantee service returns updated object, and run validators on put
+// apply middleware after method
+billingCycle.after('post', errorHandler).after('put', errorHandler)
 
 billingCycle.route('count', (req, res, next) => {
     billingCycle.count((error, value) => {

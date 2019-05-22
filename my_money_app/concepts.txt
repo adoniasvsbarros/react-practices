@@ -1,2 +1,6 @@
 * Monitoring with pm2 if I do not have it installed
-./node_modules/.bin/pm2
+./node_modules/.bin/pm2 monit
+./node_modules/.bin/pm2 status
+
+* Deleting application from pm2
+./node_modules/.bin/pm2 delete [app_name]

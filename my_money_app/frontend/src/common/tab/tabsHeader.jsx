@@ -6,4 +6,4 @@ const TabsHeader = props => (
     </ul>
 )
 
-export default TabsHeader;
+export default TabsHeader

@@ -32,8 +32,8 @@ class ItemList extends React.Component {
                 <td><Field name={`${this.props.field}[${index}].value`} component={Input} 
                     placeholder='Enter the value' readOnly={this.props.readOnly}/></td>
                 <If test={this.props.showStatus}>
-                <Field name={`${this.props.field}[${index}].status`} component={Input} 
-                    placeholder='Enter the status' readOnly={this.props.readOnly}/>
+                    <td><Field name={`${this.props.field}[${index}].status`} component={Input} 
+                        placeholder='Enter the status' readOnly={this.props.readOnly}/></td>
                 </If>
                 <td>
                     <button type='button' className='btn btn-success'

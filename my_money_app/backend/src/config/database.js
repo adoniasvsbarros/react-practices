@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
-module.exports = mongoose.connect('mongodb://localhost/mymoney', { useNewUrlParser: true})
+module.exports = mongoose.connect('mongodb://localhost/my_money', { useNewUrlParser: true})
 
 // mongoose message error config
 mongoose.Error.messages.general.required = "The path attribute '{PATH}' is mandatory"

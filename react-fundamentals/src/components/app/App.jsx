@@ -8,12 +8,17 @@ import ComponentWithParameter from "../componentWithParameter/ComponentWithParam
 import Fragment from "../Fragment";
 import Random from "../random/Random";
 import Card from "../card/Card";
+import Family from '../family/Family';
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#05 - Component with children">
+        <Family surname="Silva" />
+      </Card>
+
       <Card title="#04 - Random Challenge" color="#080">
         <Random min={5} max={15} />
       </Card>

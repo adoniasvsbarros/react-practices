@@ -5,17 +5,16 @@ import './index.css'
 
 import ComponentWithoutParameter from './components/componentWithoutParameter/ComponentWihtoutParameter';
 import ComponentWithParameter from './components/componentWithParameter/ComponentWithParameter';
+import Fragment from './components/Fragment';
 
 
 ReactDOM.render(
     <div id="app">
-        <ComponentWithoutParameter />,
+        <ComponentWithoutParameter />
         <ComponentWithParameter 
             title="Student Situation" 
-            student="Paul" grade={6.9}/>
-        <ComponentWithParameter 
-            title="Student Situation" 
-            student="Maria" grade={9.9}/>
+            student="Paul" grade={6.9} />
+        <Fragment />
     </div>,
     document.getElementById("root")
 );

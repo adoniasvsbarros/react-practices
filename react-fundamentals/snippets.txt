@@ -1,0 +1,36 @@
+Functional components with parameters
+
+-- index.js
+    <ComponentWithParameter 
+    title="Student Situation" 
+    student="Paul" grade={6.9}/>
+
+-- component.jsx
+    export default function Generate(props) {
+        const status = props.grade >= 7 ? 'Passed': 'Failed';
+        return (
+            <div>
+                <h2>{ props.title }</h2>
+                <p>
+                    <strong>{ props.student } </strong>
+                    has grade
+                    <strong> { props.grade } </strong>
+                    and it was considered 
+                    <strong> { status }</strong>
+                </p>
+            </div>
+        );
+    }
+
+Fragments
+
+-- component.jsx
+    export default function Fragment(props) {
+        return (
+            <React.Fragment> or <>
+                <h2>Fragment</h2>
+                <p>Be careful with this error</p>
+            <React.Fragment/> or </>
+        );
+    }
+

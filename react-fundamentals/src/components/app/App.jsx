@@ -14,15 +14,15 @@ export default (_) => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
-      <Card title="#04 - Random Challenge">
+      <Card title="#04 - Random Challenge" color="#080">
         <Random min={5} max={15} />
       </Card>
 
-      <Card title="#03 - Fragment">
+      <Card title="#03 - Fragment" color="#8a72a7">
         <Fragment />
       </Card>
 
-      <Card title="#02 - Component with parameter">
+      <Card title="#02 - Component with parameter" color="#4bb4af">
         <ComponentWithParameter
           title="Student Situation"
           student="Paul"

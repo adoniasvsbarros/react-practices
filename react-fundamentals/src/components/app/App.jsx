@@ -10,12 +10,17 @@ import Random from "../random/Random";
 import Card from "../card/Card";
 import Family from '../family/Family';
 import FamilyMember from '../family-member/FamilyMember';
+import StudentList from '../repetition/StudentList';
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+    <Card title="#06 - Repetition" color="#285">
+        <StudentList />
+      </Card>
+
       <Card title="#05 - Component with children">
         <Family surname="Ferreira">
           <FamilyMember name="Pedro"/>

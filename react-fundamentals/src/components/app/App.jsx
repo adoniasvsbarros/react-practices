@@ -9,6 +9,7 @@ import Fragment from "../Fragment";
 import Random from "../random/Random";
 import Card from "../card/Card";
 import Family from '../family/Family';
+import FamilyMember from '../family-member/FamilyMember';
 
 export default (_) => (
   <div className="App">
@@ -16,7 +17,11 @@ export default (_) => (
 
     <div className="Cards">
       <Card title="#05 - Component with children">
-        <Family surname="Silva" />
+        <Family surname="Ferreira">
+          <FamilyMember name="Pedro"/>
+          <FamilyMember name="Ana"/>
+          <FamilyMember name="Carol"/>
+        </Family>
       </Card>
 
       <Card title="#04 - Random Challenge" color="#080">

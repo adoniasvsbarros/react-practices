@@ -1,4 +1,4 @@
-Functional components with parameters
+## Functional components with parameters
 
 -- index.js
     <ComponentWithParameter 
@@ -22,7 +22,7 @@ Functional components with parameters
         );
     }
 
-Fragments
+## Fragments
 
 -- component.jsx
     export default function Fragment(props) {
@@ -34,3 +34,78 @@ Fragments
         );
     }
 
+## Using props.children
+
+-- index.jsx
+
+    export default () => {
+        return (
+            <Component>
+                <Child />
+            </Component>
+        );
+    }
+
+-- component.jsx
+    export default props => {
+        return (
+            <div>
+                {props.children}
+            </div>
+        );
+    }
+
+
+## Changing style css from property
+
+-- index.jsx
+    export default () => {
+        return (
+            <Component color="#fff" />
+        );
+    }
+
+-- component.jsx
+    export default props => {
+        const newStyle = {
+            background-color: props.color || '#f00'
+        }
+        
+        return (
+            <div style= {newStyle}></div>
+        );
+    };
+
+## Passing properties from father to children
+
+-- index.jsx
+    <Family surname="Silva />
+
+-- component.jsx
+    export default props => {
+        return (
+            <div>
+                <FamilyMember {..props} />
+                <FamilyMember surname={props.surname} />
+                <FamilyMember surname="Silva" />
+            </div>
+        );
+    }
+
+## Passing properties from father to children 2
+
+-- index.jsx
+    <Family surname="Ferreira">
+        <FamilyMember name="Pedro"/>
+        <FamilyMember name="Ana"/>
+        <FamilyMember name="Carol"/>
+    </Family>
+
+-- component.jsx
+    export default props => {
+        return (
+            <div>
+                <span>{props.name} {props.surname}</span>
+            </div>
+        );
+    };

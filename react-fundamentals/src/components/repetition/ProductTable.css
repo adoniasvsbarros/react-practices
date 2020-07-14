@@ -1,0 +1,11 @@
+.SpecialTable th {
+    background-color: darkgreen;
+}
+
+.SpecialTable .Even {
+    background-color: darkgray;
+}
+
+.SpecialTable .Odd {
+    background-color: gray;
+}

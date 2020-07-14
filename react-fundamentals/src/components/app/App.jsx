@@ -11,13 +11,18 @@ import Card from "../card/Card";
 import Family from '../family/Family';
 import FamilyMember from '../family-member/FamilyMember';
 import StudentList from '../repetition/StudentList';
+import ProductTable from '../repetition/ProductTable';
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
-    <Card title="#06 - Repetition" color="#285">
+      <Card title="#07 - Repetition 2" color="#555">
+        <ProductTable />
+      </Card>
+
+      <Card title="#06 - Repetition" color="#285">
         <StudentList />
       </Card>
 

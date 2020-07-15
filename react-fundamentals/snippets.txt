@@ -169,3 +169,65 @@ export default props => {
             </If>
         </di>
     };
+
+## Direct Communication
+
+-- father.jsx
+    export default props => {
+        return (
+            <Child value={10} />
+        );
+    }
+
+-- child.jsx
+    export default props => {
+        <div>{props.value}</div>
+    }
+
+## Indirect Communication
+
+-- father.jsx
+    export default props => {
+        function getValue(x) {
+            console.log(x);
+        }
+
+        return (
+            <Child onClicked={getValue} />
+        );
+    }
+
+-- child.jsx
+    export default props => {
+        return (
+            <button onClick={e => {
+                props.onClicked(10);
+            }}>clickMe</button>
+        );
+    }
+
+## Indirect communication setting property on father with useState hook
+
+-- father.jsx
+import { useState } from 'react';
+
+    export default props => {
+        const [value, setValue] = useState(0);
+        function getValue(value) {
+            setValue(value);
+        }
+
+        return (
+            {value}
+            <Child onClicked={getValue} />
+        );
+    }
+
+-- child.jsx
+    export default props => {
+        return (
+            <button onClick={e => {
+                props.onClicked(10);
+            }}>clickMe</button>
+        );
+    }

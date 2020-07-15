@@ -16,13 +16,18 @@ import EvenOrOdd from '../conditional/EvenOrOdd';
 import UserInfo from '../conditional/UserInfo';
 import DirectFather from '../directCommunication/directFather';
 import IndirectFather from '../indirectCommunication/indirectFather';
+import Input from '../form/input';
+
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
-    <Card title="#10 - Indirect Communication" color="#009">
+      <Card title="#11 - Controlled Component" color="#808">
+        <Input />
+      </Card>
+      <Card title="#10 - Indirect Communication" color="#009">
         <IndirectFather />
       </Card>
       <Card title="#09 - Direct Communication" color="#591">

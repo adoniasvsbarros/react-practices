@@ -231,3 +231,22 @@ import { useState } from 'react';
             }}>clickMe</button>
         );
     }
+
+
+## Controlled component
+    
+-- input.jsx
+    import {useState} from 'react'
+    
+    export default props => {
+        const [value, setValue] = useState(0)
+
+        const updateValue = e => {
+            setValue(e.target.value);
+        }
+
+        return (
+            <div>{value}</div>
+            <input value={value} onChange={updateValue}/>
+        );
+    };

@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import IndirectChild from './indirectChild';
 
 export default props => {
-    let name = '?'
-    let age = 0
-    let bool = false
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [bool, setBool] = useState(false)
 
-    const giveInfo = (nameParam, ageParam, boolParam) => {
-        name = nameParam;
-        age = ageParam;
-        bool = boolParam;
+    const giveInfo = (name, age, bool) => {
+        setName(name);
+        setAge(age);
+        setBool(bool);
     };
 
 

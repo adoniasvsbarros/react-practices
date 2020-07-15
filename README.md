@@ -20,7 +20,8 @@
 * Exercises
   * MongoDB, Node, Express, CSS
 * Webpack 4
-* React 16.4
+* React 16.13
+* React Hooks
 
 
 For more information: https://www.udemy.com/react-redux-pt/

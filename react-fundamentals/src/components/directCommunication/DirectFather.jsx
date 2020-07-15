@@ -1,5 +1,5 @@
 import React from 'react';
-import DirectChild from './directChild';
+import DirectChild from './DirectChild';
 
 export default props => {
     return (

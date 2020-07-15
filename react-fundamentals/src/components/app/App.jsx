@@ -14,9 +14,10 @@ import StudentList from '../repetition/StudentList';
 import ProductTable from '../repetition/ProductTable';
 import EvenOrOdd from '../conditional/EvenOrOdd';
 import UserInfo from '../conditional/UserInfo';
-import DirectFather from '../directCommunication/directFather';
-import IndirectFather from '../indirectCommunication/indirectFather';
-import Input from '../form/input';
+import DirectFather from '../directCommunication/DirectFather';
+import IndirectFather from '../indirectCommunication/IndirectFather';
+import Input from '../form/Input';
+import Counter from '../counter/Counter';
 
 
 export default (_) => (
@@ -24,6 +25,9 @@ export default (_) => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#12 - Counter" color="pink">
+        <Counter initialNumber={30}/>
+      </Card>
       <Card title="#11 - Controlled Component" color="#808">
         <Input />
       </Card>

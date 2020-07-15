@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import IndirectChild from './indirectChild';
+import IndirectChild from './IndirectChild';
 
 export default props => {
     const [name, setName] = useState('?')

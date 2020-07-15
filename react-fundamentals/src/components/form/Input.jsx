@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './input.css';
+import './Input.css';
 
 export default props => {
     const [value, setValue] = useState('initial')

@@ -14,12 +14,20 @@ import StudentList from '../repetition/StudentList';
 import ProductTable from '../repetition/ProductTable';
 import EvenOrOdd from '../conditional/EvenOrOdd';
 import UserInfo from '../conditional/UserInfo';
+import DirectFather from '../directCommunication/directFather';
+import IndirectFather from '../indirectCommunication/indirectFather';
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+    <Card title="#10 - Indirect Communication" color="#009">
+        <IndirectFather />
+      </Card>
+      <Card title="#09 - Direct Communication" color="#591">
+        <DirectFather />
+      </Card>
 
       <Card title="#08 - Conditional Renderization 1" color="#222">
         <EvenOrOdd number={20}/>

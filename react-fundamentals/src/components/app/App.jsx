@@ -24,7 +24,6 @@ export default (_) => (
       <Card title="#08 - Conditional Renderization 1" color="#222">
         <EvenOrOdd number={20}/>
         <UserInfo user={{name: 'Fred'}}/>
-        <UserInfo user={{email: 'fred@fred.com'}}/>
       </Card>
 
       <Card title="#07 - Repetition 2" color="#555">

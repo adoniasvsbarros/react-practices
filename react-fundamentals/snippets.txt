@@ -129,3 +129,43 @@
             </div>
         );
     };
+
+## Conditional Renderization 1
+
+-- index.jsx
+    <EvenOrOdd number={20}/>
+
+-- component.jsx
+export default props => {
+    const isEven = props.number % 2 === 0;
+    return (
+        <div>
+            <span>{ props.number } is </span>
+            {   
+                isEven ? 
+                <span>Even</span> : 
+                <span>Odd</span>
+            }
+        </div>
+    );
+};
+
+## Conditional Renderization 2
+
+-- if.js
+    export default props => {
+        if(props.expr){
+            return props.children;
+        } else {
+            return false;
+        }
+    };
+
+-- component.jsx
+    export default props => {
+        <div>
+            <If expr={props.username} >
+                <div> Hello {props.username} </div>
+            </If>
+        </di>
+    };

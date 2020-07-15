@@ -12,12 +12,21 @@ import Family from '../family/Family';
 import FamilyMember from '../family-member/FamilyMember';
 import StudentList from '../repetition/StudentList';
 import ProductTable from '../repetition/ProductTable';
+import EvenOrOdd from '../conditional/EvenOrOdd';
+import UserInfo from '../conditional/UserInfo';
 
 export default (_) => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+
+      <Card title="#08 - Conditional Renderization 1" color="#222">
+        <EvenOrOdd number={20}/>
+        <UserInfo user={{name: 'Fred'}}/>
+        <UserInfo user={{email: 'fred@fred.com'}}/>
+      </Card>
+
       <Card title="#07 - Repetition 2" color="#555">
         <ProductTable />
       </Card>

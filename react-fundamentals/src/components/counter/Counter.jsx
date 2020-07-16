@@ -13,9 +13,6 @@ class Counter extends Component {
         step: this.props.initialStep || 5
     }
 
-    constructor(props) {
-        super(props)
-    }
 
     increment = () => {
         this.setState({

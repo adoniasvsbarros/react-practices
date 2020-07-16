@@ -18,6 +18,8 @@ import DirectFather from '../directCommunication/DirectFather';
 import IndirectFather from '../indirectCommunication/IndirectFather';
 import Input from '../form/Input';
 import Counter from '../counter/Counter';
+import ClassMega from '../mega/Mega';
+import FunctionalMega from '../mega/Mega2';
 
 
 export default (_) => (
@@ -25,6 +27,10 @@ export default (_) => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#13 - Mega" color="">
+        <ClassMega />
+        <FunctionalMega />
+      </Card>
       <Card title="#12 - Counter" color="pink">
         <Counter initialNumber={30}/>
       </Card>

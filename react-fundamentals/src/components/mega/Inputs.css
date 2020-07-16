@@ -1,0 +1,9 @@
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
+}
+
+.Inputs .Align {
+    text-align: left;
+}

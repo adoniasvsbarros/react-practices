@@ -81,89 +81,70 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/assets/css/style.css":
-/*!**********************************!*\
-  !*** ./src/assets/css/style.css ***!
-  \**********************************/
-/*! no static exports found */
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/css/style.css?");
+const moduleB = __webpack_require__(1)
+
+console.log(moduleB.greet())
 
 /***/ }),
-
-/***/ "./src/assets/index.js":
-/*!*****************************!*\
-  !*** ./src/assets/index.js ***!
-  \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/assets/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/assets/scss/index.scss\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/assets/index.js?");
-
-/***/ }),
-
-/***/ "./src/assets/scss/index.scss":
-/*!************************************!*\
-  !*** ./src/assets/scss/index.scss ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/scss/index.scss?");
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person */ \"./src/person.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/moduleA */ \"./src/modules/moduleA.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_moduleA__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets */ \"./src/assets/index.js\");\n\n\n\n\nconst person = new _person__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\nconsole.log(person.greet())\n\n//# sourceURL=webpack:///./src/main.js?");
-
-/***/ }),
-
-/***/ "./src/modules/moduleA.js":
-/*!********************************!*\
-  !*** ./src/modules/moduleA.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("const moduleB = __webpack_require__(/*! ./moduleB */ \"./src/modules/moduleB.js\")\n\nconsole.log(moduleB.greet())\n\n//# sourceURL=webpack:///./src/modules/moduleA.js?");
-
-/***/ }),
-
-/***/ "./src/modules/moduleB.js":
-/*!********************************!*\
-  !*** ./src/modules/moduleB.js ***!
-  \********************************/
-/*! no static exports found */
+/* 1 */
 /***/ (function(module, exports) {
 
-eval("module.exports = {\n    greet() { return 'Hello I\\'m the B module'}\n}\n\n//# sourceURL=webpack:///./src/modules/moduleB.js?");
+module.exports = {
+    greet() { return 'Hello I\'m the B module'}
+}
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./src/person.js":
-/*!***********************!*\
-  !*** ./src/person.js ***!
-  \***********************/
-/*! exports provided: default */
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Person; });\nclass Person {\n    greet() {\n        return 'Hello!'\n    }\n}\n\n//# sourceURL=webpack:///./src/person.js?");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./src/person.js
+class Person {
+    greet() {
+        return 'Hello!'
+    }
+}
+// EXTERNAL MODULE: ./src/modules/moduleA.js
+var moduleA = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./src/assets/css/style.css
+var style = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./src/assets/scss/index.scss
+var scss = __webpack_require__(3);
+
+// CONCATENATED MODULE: ./src/assets/index.js
+
+
+// CONCATENATED MODULE: ./src/main.js
+
+
+
+
+const person = new Person
+console.log(person.greet())
 
 /***/ })
-
-/******/ });
+/******/ ]);

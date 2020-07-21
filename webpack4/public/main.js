@@ -86,25 +86,37 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./modules/moduleA.js":
-/*!****************************!*\
-  !*** ./modules/moduleA.js ***!
-  \****************************/
+/***/ "./src/assets/css/style.css":
+/*!**********************************!*\
+  !*** ./src/assets/css/style.css ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const moduleB = __webpack_require__(/*! ./moduleB */ \"./modules/moduleB.js\")\n\nconsole.log(moduleB.greet())\n\n//# sourceURL=webpack:///./modules/moduleA.js?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/css/style.css?");
 
 /***/ }),
 
-/***/ "./modules/moduleB.js":
-/*!****************************!*\
-  !*** ./modules/moduleB.js ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/assets/index.js":
+/*!*****************************!*\
+  !*** ./src/assets/index.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = {\n    greet() { return 'Hello I\\'m the B module'}\n}\n\n//# sourceURL=webpack:///./modules/moduleB.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/assets/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/assets/scss/index.scss\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/assets/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/scss/index.scss":
+/*!************************************!*\
+  !*** ./src/assets/scss/index.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/scss/index.scss?");
 
 /***/ }),
 
@@ -116,7 +128,29 @@ eval("module.exports = {\n    greet() { return 'Hello I\\'m the B module'}\n}\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person */ \"./src/person.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/moduleA */ \"./modules/moduleA.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_moduleA__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst person = new _person__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\nconsole.log(person.greet())\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person */ \"./src/person.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/moduleA */ \"./src/modules/moduleA.js\");\n/* harmony import */ var _modules_moduleA__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_moduleA__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets */ \"./src/assets/index.js\");\n\n\n\n\nconst person = new _person__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\nconsole.log(person.greet())\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/moduleA.js":
+/*!********************************!*\
+  !*** ./src/modules/moduleA.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const moduleB = __webpack_require__(/*! ./moduleB */ \"./src/modules/moduleB.js\")\n\nconsole.log(moduleB.greet())\n\n//# sourceURL=webpack:///./src/modules/moduleA.js?");
+
+/***/ }),
+
+/***/ "./src/modules/moduleB.js":
+/*!********************************!*\
+  !*** ./src/modules/moduleB.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = {\n    greet() { return 'Hello I\\'m the B module'}\n}\n\n//# sourceURL=webpack:///./src/modules/moduleB.js?");
 
 /***/ }),
 

@@ -1,1 +1,12 @@
-body{background-color:grey}.buttonStyle{background-color:#19b3e6;color:#fff;font-size:1.8em}
+body {
+  background-color: grey;
+  background-image: url(2ae5e304293fdf7bdbaf18efcfc8b431.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
+
+.buttonStyle {
+  background-color: #19B3E6;
+  color: #FFF;
+  font-size: 1.8em; }
+

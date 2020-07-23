@@ -1,11 +1,9 @@
 {
-    "users": [{
-        "id": 1,
-        "name":"Bruno",
-        "email": "bruno@gmail.com"
-    }, {
-        "id": 2,
-        "name":"Ana",
-        "email": "ana@gmail.com"
-    }]
+  "users": [
+    {
+      "name": "Bruno2",
+      "email": "bruno@gmail.com",
+      "id": 1
+    }
+  ]
 }
